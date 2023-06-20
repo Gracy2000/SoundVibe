@@ -1,0 +1,29 @@
+{
+  "name": "babel-webpack",
+  "version": "1.0.0",
+  "description": "This is a practise for node ,  babel and webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "serve": "npx webpack serve",
+    "watch": "npx webpack --watch"
+  },
+  "keywords": [
+    "Node",
+    "babel",
+    "webpack",
+    "practise"
+  ],
+  "author": "DipeshGangwani",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}

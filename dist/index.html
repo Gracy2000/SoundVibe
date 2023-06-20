@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <!-- ICON IMG -->
+    <link rel="icon" href="./Images/spotify-logo.png" type="image/icon type">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <!-- This is CSS SECTION -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body >
+
+    <div id="container-fluids">
+        <!-- This is LOGIN PAGE -->
+        <div id="login-page">
+            <div class="login-container text-center">
+                <!-- <img src="./Images/loginpage4.webp" class="img-responsive" alt=""> -->
+                <div class="login">
+                    <div class="login-img" data-tilt>
+                        <img src="./Images/img-01.png" alt="IMG">
+                    </div>
+                    <div class="login-form">
+                        <h2 class="p-20"><i class="fa fa-spotify p-10" aria-hidden="true"></i>Spotify</h2>
+                        <input class="login-input" type="text" name="client-id" placeholder="client-id">
+                        <input class="login-input" type="password" name="client-secret" placeholder="client-secret">
+                        <button id="login-btn" class="btn login-btn">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is MAIN PAGE -->
+        <div id="main-page">
+            <div class="flex-container">
+                <!-- This is LEFT SECTION -->
+                <div class="p-2 flex-item-left m-2">
+                    <div class="left-side-content">
+                        <!-- This is TITLE-IMG SECTION -->
+                        <div id="title-img">
+                            <!-- <img src="./Images/87-875608_green-spotify-logo-png-transparent-png.png" width="200px" height="100px" alt=""> -->
+                        </div>
+                        <!-- This is LEFT-MENU SECTION -->
+                        <div id="menu-list">
+                            <ul>
+                                <li id="home-btn" class="m-20 p-20">
+                                    <i class="fa fa-home fa-2x p-r-5" aria-hidden="true"></i> <a class="" aria-current="page" href="">Home</a>
+                                </li>
+                                <li id="new-release-btn" class="m-20 p-20">
+                                    <i class="fa fa-telegram fa-2x p-r-5" aria-hidden="true"></i> <a class="" href="">New Release</a>
+                                </li>
+                                <li id="user-playlists-btn" class="m-20 p-20">
+                                    <i class="fa fa-music fa-2x p-r-5" aria-hidden="true"></i> <a class="" href="">Your Playlists</a>
+                                </li>
+                                <li id="like-section-btn" class="m-20 p-20">
+                                    <i class="fa fa-heart fa-2x p-r-5" aria-hidden="true"></i> <a class="" href="">Liked Songs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- This is CURRENT-PLAYING SECTION -->
+                        <div id="song-details" class="song-details">
+                            <h6>Current Playing</h6>
+                            <img src="./Images/download.jpg" alt=""> 
+                            <h6>Song Name :</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- This is RIGHT SECTION -->
+                <div class="p-2 flex-item-right m-2">
+
+                    <!-- This is NAVBAR SECTION -->
+                    <div id="navbar" >
+                        <div class="search-bar">
+                            <i id="search-icon" class="fa fa-search fa-2x" aria-hidden="true"></i>
+                            <input type="text" placeholder="Search Songs" id="search-bar">
+                        </div>
+                        <div class="m-r-20">
+                            <span id="user-details">
+                                <span>Signed in as:</span> <img src="" alt=""><span>Name</span>
+                            </span>
+                            <span>
+                                <button id="log-out"class="log-out-btn">Logout</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- This is CONTENT SECTION -->
+                    <div id="content-section">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is FOOTER SECTION -->
+        <div id="footer" class="footer">
+            <div class="footer-content">
+                <!-- This is PLAY/PAUSE SECTION -->
+                <div id="play-pause-section">
+                    <button class="btn" id="prev-btn"><i class="fa fa-step-backward fa-2x p-5" data-id="" data-type="track" aria-hidden="true"></i></button>
+                    <button class="btn" id="play-pause-btn"><i class="fa fa-play-circle fa-2x p-5" aria-hidden="true"></i></i></button>  <!--for pause <i class="fa fa-pause" aria-hidden="true"></i> -->
+                    <button class="btn" id="next-btn"><i class="fa fa-step-forward fa-2x p-5" data-id="" data-type="track" aria-hidden="true"></i></button>
+                    <button class="btn" id="like-btn"><i class="fa fa-heart-o fa-2x p-5" aria-hidden="true"></i></button><!--for liked <i class="fa fa-heart" aria-hidden="true"></i></i> -->
+                </div>
+                <div class="playback-bar">
+                    <div id="progress-bar" class="progress-bar"><div id="progress-point"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- This is SCRIPTS SECTION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="../src/libs/slhttp.js"></script>    
+    <script src="./app.bundled.js"></script>
+</body>
+</html>
